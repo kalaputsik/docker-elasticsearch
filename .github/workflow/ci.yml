@@ -9,8 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - image: '2.324/Dockerfile'
-            tags: [ "spryker/jenkins:latest", "spryker/jenkins:2.324" ]
+          - image: '7.10/Dockerfile'
+            tags: [ "kalaputsik/elasticsearch:latest", "kalaputsik/elasticsearch:7.10" ]
             platforms: [ 'linux/amd64', 'linux/arm64' ]
     steps:
       - name: Set up QEMU
